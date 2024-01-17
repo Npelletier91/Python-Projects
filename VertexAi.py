@@ -5,7 +5,7 @@ from google.cloud import aiplatform
 PROJECT_ID = "infra-rhino-410923"
 REGION = "us-central1"
 
-BUCKET_NAME = "new_bucket_345366"
+BUCKET_NAME = "new_bucket_45674536"
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\\Users\\Nicol\\Documents\\infra-rhino-410923-34b1cd6ada2b.json"
 
@@ -52,9 +52,9 @@ def main():
     Main function that orchestrates the steps ot create the bucket, upload the dataset, and create the Tabular Dataset.
     """
     create_bucket(BUCKET_NAME)
-    upload_dataset(BUCKET_NAME, r"C:\\Users\\Nicol\\Documents\\Python Practice\\image_dataset.csv")
-    create_tabular_dataset(BUCKET_NAME, r"C:\\Users\\Nicol\Documents\\Python Practice\\image_dataset.csv")
-    analyze_dataset(BUCKET_NAME, r"C:\\Users\\Nicol\Documents\\Python Practice\\image_dataset.csv")
+    upload_dataset(BUCKET_NAME, r"C:\\Users\\Nicol\Documents\\GitHub Repos\\Python-Projects\\image_dataset.csv")
+    create_tabular_dataset(BUCKET_NAME, r"C:\\Users\\Nicol\Documents\\GitHub Repos\\Python-Projects\\image_dataset.csv")
+    analyze_dataset(BUCKET_NAME, r"C:\\Users\\Nicol\Documents\\GitHub Repos\\Python-Projects\\image_dataset.csv")
     
 if __name__ == "__main__":
     main()
