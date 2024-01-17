@@ -4,8 +4,6 @@ import numpy as np
 import statsmodels.api as sm
 import warnings
 
-import spicy
-
 from scipy.stats import ttest_ind, norm
 
 dataset = pd.read_csv("C:\\Users\\Nicol\\Documents\\GitHub Repos\\Python-Projects\\dataset_1.csv")
