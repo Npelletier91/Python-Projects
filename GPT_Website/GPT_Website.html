@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Paradise</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#roses">ROSES</a></li>
+            <li><a href="#tulips">TULIPS</a></li>
+            <li><a href="#lilies">LILIES</a></li>
+            <li><a href="#sunflowers">SUNFLOWERS</a></li>
+            <li><a href="#orchids">ORCHIDS</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="flower-container">
+    <section id="home">
+        <h1>Welcome to Flower Paradise</h1>
+        <p>This is your go-to place for information about the most popular flowers on Earth.</p>
+    </section>
+
+    <div class="flower-container">
+    <section id="roses" class="flower-section" onclick="openLightbox('roses.jpg')">
+        <h2>Roses</h2>
+        <img src="roses.jpg" alt="Rose Image">
+        <p>Roses are one of the most beloved flowers, known for their beauty and fragrance. With a rich history dating back thousands of years, roses have been symbols of love, passion, and mystery.</p>
+        <p>Ancient Greeks and Romans associated roses with their goddesses of love, Aphrodite and Venus. Over the centuries, roses have continued to captivate hearts worldwide, becoming an iconic symbol in various cultures and traditions.</p>
+    </section>
+    </div>
+
+    <div class="flower-container">
+    <section id="tulips" class="flower-section">
+        <h2>Tulips</h2>
+        <img src="tulips.jpg" alt="Tulips Image" onclick="openLightbox('tulips.jpg')">
+        <p>Tulips are known for their vibrant colors and elegant appearance, making them a symbol of beauty and grace. Originating from Central Asia, tulips gained popularity in the Ottoman Empire in the 16th century before spreading across Europe during the Tulip Era.</p>
+        <p>The fascination with tulips reached its peak during the Dutch Golden Age, leading to the famous "Tulip Mania." Despite the economic bubble, tulips continue to be cherished for their enchanting allure, with each color carrying its own unique significance.</p>
+    </section>
+    </div>
+
+    <div class="flower-container">
+    <section id="lilies" class="flower-section">
+        <h2>Lilies</h2>
+        <img src="lilies.jpg" alt="Lilies Image" onclick="openLightbox('lilies.jpg')">
+        <p>Lilies are exquisite flowers known for their symbolic meanings of purity, renewal, and transience. With a history dating back to ancient civilizations, lilies have been featured in art, literature, and religious ceremonies, representing various cultural and spiritual aspects.</p>
+        <p>In Christian traditions, lilies symbolize the resurrection, while in Greek mythology, they are associated with the goddess Hera. The diverse varieties of lilies showcase a wide range of colors and patterns, captivating admirers with their timeless elegance.</p>
+    </section>
+    </div>
+
+    <div class="flower-container">
+    <section id="sunflowers" class="flower-section">
+        <h2>Sunflowers</h2>
+        <img src="sunflowers.jpg" alt="Sunflowers Image" onclick="openLightbox('sunflowers.jpg')">
+        <p>Sunflowers are iconic for their bright yellow petals and distinctive appearance, evoking feelings of warmth and positivity. Native to North America, these flowers have been cultivated for centuries, with Native American tribes appreciating their nutritional and symbolic value.</p>
+        <p>Van Gogh's famous "Sunflowers" paintings further immortalized these blooms in art history. Sunflowers are not only aesthetically pleasing but also carry meanings of loyalty, adoration, and a connection to the sun's life-giving energy.</p>
+    </section>
+    </div>
+
+    <div class="flower-container">
+    <section id="orchids" class="flower-section">
+        <h2>Orchids</h2>
+        <img src="orchids.jpg" alt="Orchids Image" onclick="openLightbox('orchids.jpg')">
+        <p>Orchids are exotic and diverse flowers, symbolizing beauty, love, and refinement. With over 25,000 species, orchids are found on every continent except Antarctica, thriving in various climates and ecosystems. Their intricate and delicate appearance has made them a sought-after choice in floral arrangements.</p>
+        <p>Orchids hold cultural significance in many societies, representing fertility, luxury, and strength. These captivating flowers have inspired art, literature, and even scientific exploration, as enthusiasts are drawn to the mystery and elegance surrounding the orchid family.</p>
+    </section>
+    </div>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Flower Paradise is a passionate company dedicated to exploring the beauty and history of flowers. We believe in sharing the enchanting stories behind each blossom, connecting people to the wonders of nature.</p>
+        <p>Our team of botanists, historians, and flower enthusiasts work tirelessly to bring you fascinating insights into the world of flowers. Join us on this floral journey and discover the hidden tales that make each petal unique.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <p></p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <p></p>            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <p></p>          
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <div id="lightbox-modal" class="modal">
+        <span class="close-modal" onclick="closeLightbox()">X</span>
+        <img class="modal-content" id="lightbox-image">
+    </div>
+
+    <button onclick="scrollToTop()" id="scroll-to-top" title="Go to top">&#8679;</button>
+
+    <script src="JavaScript.js"></script>
+
+</body>
+</html>
