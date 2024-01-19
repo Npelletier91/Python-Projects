@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = "hidden"
 
 raw_data = input("Enter raw data:")
 

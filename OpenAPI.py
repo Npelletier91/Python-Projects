@@ -2,7 +2,7 @@ import os
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="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"
+    api_key="hidden"
 )
 
 raw_data = input("Enter a sentence to be translated to french: ")
