@@ -1,0 +1,15 @@
+# Sample YAML data
+person:
+  name: John Doe
+  age: 35
+  city: Exampleville
+# This is a sample YAML file
+# It contains user information
+name: Alice
+age: 28
+city: Wonderland
+# This is a sample YAML file
+# It contains user information
+name: Nic
+age: 32
+city: Wonderland
