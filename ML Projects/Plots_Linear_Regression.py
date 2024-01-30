@@ -3,11 +3,12 @@ from matplotlib import pyplot as plt
 from sklearn.linear_model import SGDRegressor
 
 
+
 df = pd.read_csv('dataset_1.csv')
 
 print(df.head())
 
-df = df[['column_1','column_2']]
+#df = df[['column_1','column_2']]
 
 #df.plot(kind='scatter', x='column_1', y='column_2')
 #plt.figure(figsize=(12,8))
