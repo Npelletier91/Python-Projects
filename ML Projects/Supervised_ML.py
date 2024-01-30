@@ -17,13 +17,14 @@ print(f"X_train", X_train.count())
 print(f"Y_test", Y_test)
 print(f"Y_train", Y_train.count())
 
+
+
 model = LogisticRegression()
 trained_model = model.fit(X_train, Y_train)
 print(f"Trained model: ", trained_model)
 
 prediction = model.predict(X_test)
 print(f"Predictions: ", prediction)
-
 
 accuracy = accuracy_score(prediction, Y_test)
 print(f"Accuracy: ", accuracy)
