@@ -13,7 +13,8 @@ from keras.datasets import fashion_mnist
 train_images = train_images / 255.0
 test_images = test_images / 255.0
 
-# Reshape the data if necessary
+# Original fashion data is 2D
+# Reshape the data to 4D array for the Keras convoluted layers work properly
 train_images = train_images.reshape((train_images.shape[0], 28, 28, 1))
 test_images = test_images.reshape((test_images.shape[0], 28, 28, 1))
 
@@ -26,7 +27,7 @@ y_test = to_categorical(test_labels, 10)
 model = Sequential()
 
 
-model.add(Conv2D(28, (3, 3), activation='relu', input_shape=(28, 28, 1), padding='same'))
+model.add(Conv2D(28, (3, 3), activation='relu', input_shape=(28, 28, 1)))
 model.add(MaxPooling2D((2, 2)))
 model.add(Conv2D(56, (3, 3), activation='relu'))
 model.add(Dropout(rate=0.15))
